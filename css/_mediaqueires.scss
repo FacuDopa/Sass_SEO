@@ -1,0 +1,267 @@
+@media screen and (max-width: 1590px) {
+    
+    .main_galeria{
+        .galeria{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 600px);
+            
+            .img1{
+                grid-column: 1/3;
+                grid-row: 1/2;
+                background-image: url(../img/mueble-cajon.jpg);
+                background-size: cover;
+            }
+        
+            .img2{
+                grid-column: 1/2;
+                grid-row: 2/3;
+                background-image: url(../img/mueble1-2.jpg);
+                background-size: cover;
+                background-position: -300px;
+            }
+        
+            .img3{
+                grid-column: 2/3;
+                grid-row: 2/4;
+                background-image: url(../img/proceso1.jpg);
+            }
+        
+            .img4{
+                grid-column: 1/2;
+                grid-row: 3/4;
+                background-image: url(../img/banco.jpeg);
+                
+                &:hover{
+                    background-image: url(../img/banco.jpeg) !important;
+                    background-size: none;
+                }
+            }
+        
+            .img5{
+                grid-column: 2/3;
+                grid-row: 4/5;
+                background-image: url(../img/porta_celular.jpeg);
+                background-position: center;
+            }
+        
+            .img6{
+                grid-column: 1/2;
+                grid-row: 4/5;
+                background-image: url(../img/lapicero.jpeg);
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 1280px) {
+    .main_galeria{
+        .galeria{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(7, 900px);
+    
+            .img1{
+                grid-column: 1/2;
+                grid-row: 1/3;
+                background-image: url(../img/porta_joystick.jpeg);
+                
+                &:hover{
+                    background-image: url(../img/porta_joystick-1.jpeg);
+            
+                }
+            }
+        
+            .img2{
+                grid-column: 1/2;
+                grid-row: 3/4;
+                background-position: center;
+            }
+        
+            .img3{
+                grid-column: 1/2;
+                grid-row: 4/5;
+                background-image: url(../img/porta_auriculares.jpg);
+            }
+        
+            .img4{
+                grid-column: 1/2;
+                grid-row: 5/6;
+                background-size: cover;
+            }
+        
+            .img5{
+                grid-column: 1/2;
+                grid-row: 6/7;
+            }
+            
+            .img6{
+                grid-column: 1/2;
+                grid-row: 7/8;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1177px) {
+    header{
+        nav{
+            width: 65%;
+        }
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .main_galeria{
+        .galeria{
+            .img2{
+                background-image: url(../img/reparacion.jpg);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    header{
+        nav{
+            width: 62%;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    header{
+        display: inline-block;
+        nav{
+            width: 100%;
+            background-color: rgb(14 70 70);
+        }
+    
+        .nav{
+            justify-content: space-around;
+        }
+    }
+
+    header#servicios{
+        margin-bottom: 50px;
+    }
+
+    .main_ubicacion{
+        .titulo_body{
+            padding-top: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .main_galeria{
+        .galeria{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(7, 400px);
+    
+            .img2{
+                    background-size: contain;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .titulo_body{
+        font-size: 30px;
+    }
+    .parrafos_body{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .contenedor_form{
+        display: flex;
+        justify-content: center;
+
+        .formulario{
+            margin: 0px;
+            width: 350px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+    .titulo_body{
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+    .parrafos_body{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+
+    header#servicios{
+        margin-bottom: 30px;
+    }
+
+    header{
+        nav{
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 482px) {
+    h1{
+        font-size: 35px;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    header{
+        nav{
+            font-size: 13px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header{
+        nav{
+            font-size: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    h1{
+        font-size: 25px;
+        padding-top: 25px;
+    }
+
+    .main_ubicacion{
+        .titulo_body{
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 347px) {
+    header{
+        nav{
+            font-size: 9px;
+        }
+    }
+}
+
+@media screen and (max-width: 330px) {
+    header{
+        nav{
+            font-size: 8px;
+        }
+    }
+}
