@@ -76,7 +76,7 @@ footer .redes a {
   transition: 0.8s all;
 }
 footer .redes a i:hover {
-  transition: 0.5s;
+  transition: 0.8s;
   transform: scale(1.2);
 }
 footer .redes a.ig:hover {

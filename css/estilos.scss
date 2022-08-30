@@ -107,7 +107,7 @@ footer{
             transition:$redestran all;
             
             & i:hover{
-                transition: 0.5s;
+                transition: $redestran;
                 transform: scale(1.2);
             }
             
