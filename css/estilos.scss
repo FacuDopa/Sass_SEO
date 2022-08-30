@@ -2,12 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 $sombraT: 0px 0px 12px rgb(255, 255, 255);
+$sombrali: 5px 5px 12px rgb(0 0 0);
 
 // mapa de bg-colors y colores de texto
 $colores:(
     colorform: rgb(206, 194, 194),
+    bg_footer-nav: rgb(14 70 70),
     tfooter: rgb(119, 148, 156),
-    tlogo: #fff
+    tlogo: #fff,
+    cfooter-nav: rgb(25, 135, 84),
 );
 
 *{
@@ -22,49 +25,59 @@ html{
 
 /* -css- nav y footer todas las paginas */
 header{
-    display: flex;
     width: 100%;
-    background-color: rgb(14 70 70);
-    max-height: 59px;
+    background-color: map-get($colores ,bg_footer-nav);
     
-    .logo{
-
-        .jyr{
-            color: map-get($colores, tlogo);
-            align-content: center;
-            text-shadow: $sombraT;
-            padding-left: 5px;
-        }
-    }
-    
-    nav{
-        width: 70%;
-        padding-top: 12px;
+    .navbar-expand-lg{
+        width: 100%;
+        padding: 0;
         font-size: 20px;
-    }
-    
-    .nav{
-        justify-content: flex-end;
-    }
-    
-    .nav-link{
-        color: #fff;
-        
-        &:hover{
-            color: #fff;
+
+        .logo{
+            .jyr{
+                color: map-get($colores, tlogo);
+                align-content: center;
+                text-shadow: $sombraT;
+                padding-left: 5px;
+            }
         }
+
+        li{
+            padding-right: 15px;
+            .nav-link{
+                color: map-get($colores, cfooter-nav);
+                text-shadow: $sombrali, $sombrali, $sombrali;
+                
+                &:hover{
+                    color: #fff;
+                }
+
+                &.active{
+                    color: #fff;
+
+                    &:hover{
+                        color: map-get($colores, cfooter-nav)
+                    }
+                }
+            }
+        }
+
     }
+
+    
+    
 }
 
 footer{
     text-align: center;
-    background-color: rgb(11, 13, 49);
+    background-color: map-get($colores, bg_footer-nav);
     padding: 10px;
 
     p{
         margin: 5px;
         font-size: 30px;
-        color: map-get($colores, tfooter);
+        color: map-get($colores, cfooter-nav);
+        text-shadow: $sombrali;
         bottom: 0;
     
     }
@@ -77,16 +90,34 @@ footer{
         list-style: none;
         
         a{
-            color: map-get($colores, tfooter);
+            color: map-get($colores, cfooter-nav);
+            text-shadow: $sombrali;
             padding-left: 5px;
             padding-right: 5px;
+            transition:0.5s all;
+
+            &.ig:hover{
+                color: rgb(218, 24, 88);
+                transition: 0.5s;
+            }
+            
+            &.fc:hover{
+                color: rgb(70, 70, 241);
+                transition: 0.5s;
+                transform: rotate(100px)
+            }
+            
+            &.pint:hover{
+                color: red;
+                transition: 0.5s;
+            }
         }
     }
 }
 
 /* inicio -css- index */
 
-h1{
+.titulo_index{
     height: 90px;
     width: 100%;
     background-image: url(../img/imagen_fondo.jpeg);

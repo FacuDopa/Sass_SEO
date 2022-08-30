@@ -12,41 +12,47 @@ html {
 
 /* -css- nav y footer todas las paginas */
 header {
-  display: flex;
   width: 100%;
   background-color: rgb(14, 70, 70);
-  max-height: 59px;
 }
-header .logo .jyr {
+header .navbar-expand-lg {
+  width: 100%;
+  padding: 0;
+  font-size: 20px;
+}
+header .navbar-expand-lg .logo .jyr {
   color: #fff;
   align-content: center;
   text-shadow: 0px 0px 12px rgb(255, 255, 255);
   padding-left: 5px;
 }
-header nav {
-  width: 70%;
-  padding-top: 12px;
-  font-size: 20px;
+header .navbar-expand-lg li {
+  padding-right: 15px;
 }
-header .nav {
-  justify-content: flex-end;
+header .navbar-expand-lg li .nav-link {
+  color: rgb(25, 135, 84);
+  text-shadow: 5px 5px 12px rgb(0, 0, 0), 5px 5px 12px rgb(0, 0, 0), 5px 5px 12px rgb(0, 0, 0);
 }
-header .nav-link {
+header .navbar-expand-lg li .nav-link:hover {
   color: #fff;
 }
-header .nav-link:hover {
+header .navbar-expand-lg li .nav-link.active {
   color: #fff;
+}
+header .navbar-expand-lg li .nav-link.active:hover {
+  color: rgb(25, 135, 84);
 }
 
 footer {
   text-align: center;
-  background-color: rgb(11, 13, 49);
+  background-color: rgb(14, 70, 70);
   padding: 10px;
 }
 footer p {
   margin: 5px;
   font-size: 30px;
-  color: rgb(119, 148, 156);
+  color: rgb(25, 135, 84);
+  text-shadow: 5px 5px 12px rgb(0, 0, 0);
   bottom: 0;
 }
 footer .redes {
@@ -57,13 +63,28 @@ footer .redes {
   list-style: none;
 }
 footer .redes a {
-  color: rgb(119, 148, 156);
+  color: rgb(25, 135, 84);
+  text-shadow: 5px 5px 12px rgb(0, 0, 0);
   padding-left: 5px;
   padding-right: 5px;
+  transition: 0.5s all;
+}
+footer .redes a.ig:hover {
+  color: rgb(218, 24, 88);
+  transition: 0.5s;
+}
+footer .redes a.fc:hover {
+  color: rgb(70, 70, 241);
+  transition: 0.5s;
+  transform: rotate(100px);
+}
+footer .redes a.pint:hover {
+  color: red;
+  transition: 0.5s;
 }
 
 /* inicio -css- index */
-h1 {
+.titulo_index {
   height: 90px;
   width: 100%;
   background-image: url(../img/imagen_fondo.jpeg);
@@ -468,7 +489,7 @@ h1 {
   }
 }
 @media screen and (max-width: 482px) {
-  h1 {
+  .titulo_index {
     font-size: 35px;
     padding-top: 20px;
   }
@@ -484,7 +505,7 @@ h1 {
   }
 }
 @media screen and (max-width: 360px) {
-  h1 {
+  .titulo_index {
     font-size: 25px;
     padding-top: 25px;
   }
