@@ -23,8 +23,14 @@ header .navbar-expand-lg {
 header .navbar-expand-lg .logo .jyr {
   color: #fff;
   align-content: center;
-  text-shadow: 0px 0px 12px rgb(255, 255, 255);
+  text-shadow: 5px 5px 12px rgb(0, 0, 0);
   padding-left: 5px;
+}
+header .navbar-expand-lg .navbar-toggler {
+  border: var(--bs-border-width) solid black !important;
+}
+header .navbar-expand-lg .navbar-toggler:focus {
+  box-shadow: 0 0 var(--bs-navbar-toggler-focus-width);
 }
 header .navbar-expand-lg li {
   padding-right: 15px;
@@ -411,32 +417,12 @@ footer .redes a.pint:hover {
     grid-row: 7/8;
   }
 }
-@media screen and (max-width: 1177px) {
-  header nav {
-    width: 65%;
-  }
-}
 @media screen and (max-width: 1020px) {
   .main_galeria .galeria .img2 {
     background-image: url(../img/reparacion.jpg);
   }
 }
-@media screen and (max-width: 950px) {
-  header nav {
-    width: 62%;
-  }
-}
 @media screen and (max-width: 850px) {
-  header {
-    display: inline-block;
-  }
-  header nav {
-    width: 100%;
-    background-color: rgb(14, 70, 70);
-  }
-  header .nav {
-    justify-content: space-around;
-  }
   header#servicios {
     margin-bottom: 50px;
   }
@@ -484,9 +470,6 @@ footer .redes a.pint:hover {
   header#servicios {
     margin-bottom: 30px;
   }
-  header nav {
-    font-size: 15px;
-  }
 }
 @media screen and (max-width: 482px) {
   .titulo_index {
@@ -494,14 +477,9 @@ footer .redes a.pint:hover {
     padding-top: 20px;
   }
 }
-@media screen and (max-width: 440px) {
-  header nav {
-    font-size: 13px;
-  }
-}
-@media screen and (max-width: 400px) {
-  header nav {
-    font-size: 10px;
+@media screen and (max-width: 406px) {
+  h1 {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 360px) {
@@ -511,16 +489,6 @@ footer .redes a.pint:hover {
   }
   .main_ubicacion .titulo_body {
     font-size: 15px;
-  }
-}
-@media screen and (max-width: 347px) {
-  header nav {
-    font-size: 9px;
-  }
-}
-@media screen and (max-width: 330px) {
-  header nav {
-    font-size: 8px;
   }
 }
 

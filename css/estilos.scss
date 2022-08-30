@@ -37,8 +37,16 @@ header{
             .jyr{
                 color: map-get($colores, tlogo);
                 align-content: center;
-                text-shadow: $sombraT;
+                text-shadow: $sombrali;
                 padding-left: 5px;
+            }
+        }
+
+        .navbar-toggler{
+            border: var(--bs-border-width) solid black !important;
+
+            &:focus{
+                box-shadow: 0 0 var(--bs-navbar-toggler-focus-width);
             }
         }
 
