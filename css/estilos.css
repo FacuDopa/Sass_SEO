@@ -73,20 +73,23 @@ footer .redes a {
   text-shadow: 5px 5px 12px rgb(0, 0, 0);
   padding-left: 5px;
   padding-right: 5px;
-  transition: 0.5s all;
+  transition: 0.8s all;
+}
+footer .redes a i:hover {
+  transition: 0.5s;
+  transform: scale(1.2);
 }
 footer .redes a.ig:hover {
   color: rgb(218, 24, 88);
-  transition: 0.5s;
+  transition: 0.8s;
 }
 footer .redes a.fc:hover {
   color: rgb(70, 70, 241);
-  transition: 0.5s;
-  transform: rotate(100px);
+  transition: 0.8s;
 }
 footer .redes a.pint:hover {
   color: red;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 
 /* inicio -css- index */
