@@ -87,7 +87,7 @@ footer{
         margin: 5px;
         font-size: 30px;
         color: map-get($colores, cfooter-nav);
-        text-shadow: $sombrali;
+        text-shadow: $sombrali, $sombrali;
         bottom: 0;
     
     }
@@ -101,7 +101,7 @@ footer{
         
         a{
             color: map-get($colores, cfooter-nav);
-            text-shadow: $sombrali;
+            text-shadow: $sombrali, $sombrali;
             padding-left: 5px;
             padding-right: 5px;
             transition:$redestran all;
@@ -293,7 +293,7 @@ footer{
 
 /* inicio -css- ubicacion */
 
-.main_ubicacion h2{
+.main_ubicacion{
     h2{
         padding: 0;
         margin-top: 20px;
@@ -306,7 +306,7 @@ footer{
     }
     
     .direccion{
-        margin: 10px 0 10px 5px;
+        margin: 10px 0 10px 10px;
         font-size: 25px;
     }
 }

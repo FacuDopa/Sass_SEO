@@ -58,7 +58,7 @@ footer p {
   margin: 5px;
   font-size: 30px;
   color: rgb(25, 135, 84);
-  text-shadow: 5px 5px 12px rgb(0, 0, 0);
+  text-shadow: 5px 5px 12px rgb(0, 0, 0), 5px 5px 12px rgb(0, 0, 0);
   bottom: 0;
 }
 footer .redes {
@@ -70,7 +70,7 @@ footer .redes {
 }
 footer .redes a {
   color: rgb(25, 135, 84);
-  text-shadow: 5px 5px 12px rgb(0, 0, 0);
+  text-shadow: 5px 5px 12px rgb(0, 0, 0), 5px 5px 12px rgb(0, 0, 0);
   padding-left: 5px;
   padding-right: 5px;
   transition: 0.8s all;
@@ -254,17 +254,17 @@ footer .redes a.pint:hover {
 
 /* fin -css- galeria*/
 /* inicio -css- ubicacion */
-.main_ubicacion h2 h2 {
+.main_ubicacion h2 {
   padding: 0;
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
 }
-.main_ubicacion h2 .mapa {
+.main_ubicacion .mapa {
   border: 2px solid black;
 }
-.main_ubicacion h2 .direccion {
-  margin: 10px 0 10px 5px;
+.main_ubicacion .direccion {
+  margin: 10px 0 10px 10px;
   font-size: 25px;
 }
 
